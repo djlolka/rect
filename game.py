@@ -8,8 +8,7 @@ except:
 
 def draw(screen):
     screen.fill((0, 0, 0))
-    pygame.draw.line(screen, (255, 255, 255), (0, 0), (int(a), int(b)), width=5)
-    pygame.draw.line(screen, (255, 255, 255), (0, int(b)), (int(a), 0), width=5)
+    screen.fill(pygame.Color('red'), pygame.Rect(1, 1, int(a) - 1, int(b) - 1))
 
 
 if __name__ == '__main__':
