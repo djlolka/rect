@@ -1,7 +1,9 @@
 import pygame
 
-a = input()
-b = input()
+try:
+    a, b = input().split()
+except:
+    print('Неправильный формат ввода')
 
 
 def draw(screen):
